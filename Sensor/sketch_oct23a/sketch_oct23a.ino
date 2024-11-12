@@ -4,7 +4,7 @@
 #define Buzzer 10
 #define Led 7
 #define Type DHT11
-int dhtPin = 3;
+int dhtPin = 5;
 DHT HT(dhtPin, Type);
 int humidity;
 float tempC;
