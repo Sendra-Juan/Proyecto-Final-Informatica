@@ -1,0 +1,10 @@
+H.Min: 36, H.Max: 47, T.Min: 26, T.Max: 30, Fecha: 2020-11-23
+H.Min: 34, H.Max: 56, T.Min: 22, T.Max: 34, Fecha: 2024-11-22
+H.Min: 37, H.Max: 67, T.Min: 18, T.Max: 30, Fecha: 2024-11-21
+H.Min: 34, H.Max: 71, T.Min: 16, T.Max: 28, Fecha: 2024-11-20
+H.Min: 36, H.Max: 72, T.Min: 21, T.Max: 33, Fecha: 2024-11-19
+H.Min: 35, H.Max: 68, T.Min: 19, T.Max: 31, Fecha: 2024-11-18
+H.Min: 33, H.Max: 69, T.Min: 17, T.Max: 29, Fecha: 2024-11-17
+H.Min: 36, H.Max: 70, T.Min: 20, T.Max: 32, Fecha: 2024-11-16
+H.Min: 35, H.Max: 71, T.Min: 18, T.Max: 30, Fecha: 2024-11-15
+H.Min: 34, H.Max: 70, T.Min: 16, T.Max: 28, Fecha: 2024-11-14
