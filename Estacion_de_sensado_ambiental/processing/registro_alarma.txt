@@ -1,4 +1,0 @@
-Alarma activada - Fecha: 0-00-00, Hora: 00:00:00, Temperatura: 0.0 C, Humedad: 0.0 %
-Alarma activada - Fecha: 2024-12-17, Hora: 15:45:02, Temperatura: 28.7 C, Humedad: 32.0 %
-Alarma activada - Fecha: 2024-12-17, Hora: 15:45:10, Temperatura: 28.7 C, Humedad: 32.0 %
-Alarma activada - Fecha: 2024-12-17, Hora: 15:45:18, Temperatura: 28.7 C, Humedad: 32.0 %

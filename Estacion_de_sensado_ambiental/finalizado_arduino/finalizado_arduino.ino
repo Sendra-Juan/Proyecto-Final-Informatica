@@ -14,7 +14,7 @@ struct Nodo {
 #define DHTTYPE DHT11 // Tipo de Sensor
 #define DHTPIN 3  // Pin del DHT11
 #define LED_PIN 5 // Pin del Led
-#define BUTTON_PIN 7  // Pin del boton
+#define BUTTON_PIN 13  // Pin del boton
 #define BUZZER_PIN 8  // Pin del Buzzer
 
 // Configuración del RTC
@@ -188,7 +188,7 @@ SensorDHT sensor; // Objeto de la clase sensor
 RTCDS1302 reloj;  // Objeto de la clase reloj
 Reporte reporte(10);  // Objeto del reporte, maximo 10 elementos
 
-float tempMin = 10, tempMax = 30, humMin = 20, humMax = 40;
+float tempMin = 10, tempMax = 30, humMin = 20, humMax = 35;
 
 void setup() {
   Serial.begin(9600);
@@ -196,7 +196,7 @@ void setup() {
   pinMode(LED_PIN, OUTPUT); // Configura el led como salida
   digitalWrite(LED_PIN, HIGH); //Enciende el led inicialmente
   pinMode(BUZZER_PIN, OUTPUT);  // Configura el parlante como salida
-  digitalWrite(BUZZER_PIN, LOW); // Apaga el buzzer inicialmente
+  digitalWrite(BUZZER_PIN, HIGH); // Apaga el buzzer inicialmente
   pinMode(BUTTON_PIN, INPUT_PULLUP);  // Configura el boton como entrada con resistencia pull-up
 
   reloj.setTiempoInicial();
@@ -264,12 +264,14 @@ void loop() {
     alarma = true;
   } else {
     digitalWrite(LED_PIN, LOW);
+    digitalWrite(BUTTON_PIN, LOW);
   }
 
   if(auxAlarma == 1) { // Si se presiona el boton (en arduino o precessing) se apaga el led temporalmente (10 segundo)
     ledApagado = true;
     tiempoApagado = millis(); // Guarda el tiempo actual
     digitalWrite(LED_PIN, LOW); // Apaga el led
+    digitalWrite(BUTTON_PIN, LOW);  // Apaga el buzzer
     //Serial.println("Boton presionado, led apagado temporalmente ");
   }
 
